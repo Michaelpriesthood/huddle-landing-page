@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  /* Primary colors */
+
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+
+  /* Fonts */
+  --header-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--violet);
+  line-height: 1.6;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  max-width: 1030px;
+  margin: 30px 60px;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 50px;
+}
+
+.section {
+  display: flex;
+  gap: 50px;
+}
+
+.section__img {
+  width: 550px;
+}
+
+.section__text {
+  margin-top: 35px;
+}
+
+h2 {
+  font-family: var(--header-font);
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #f4f4f4;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 50px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--violet);
+  border-radius: 50px;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background: var(--soft-magenta);
+  color: #fff;
+}
+
+.social-icons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.fa-brands {
+  color: #fff;
+  font-size: 0.9rem;
+  border: 2px solid #f4f4f49a;
+  padding: 8px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.fa-brands:hover {
+  color: var(--soft-magenta);
+  border: 2px solid var(--soft-magenta);
+}
+
+.fa-facebook-f {
+  padding: 8px 10px;
+}
+
+.attribution {
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.attribution a {
+  color: blue;
+}
+
+@media (max-width: 884px) {
+  .container {
+    margin: 30px 50px;
+  }
+
+  .section {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section__text {
+    text-align: center;
+  }
+  .social-icons {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section__img {
+    width: 300px;
+  }
+}
